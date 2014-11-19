@@ -48,7 +48,7 @@ module Ckeditor
 
   # Ckeditor files destination path
   mattr_accessor :relative_path
-  @@relative_path = '/ckeditor'
+  @@relative_path = '/assets/ckeditor'
 
   # Ckeditor assets path
   mattr_accessor :asset_path

@@ -7,14 +7,14 @@ class Ckeditor::AttachmentFilePolicy
   end
 
   def index?
-    user.present?
+    true and ! @user.nil?
   end
 
   def create?
-    user.present?
+    true and ! @user.nil?
   end
 
   def destroy?
-    attachment.assetable_id == user.id
+    @attachment.assetable_id == @user.id
   end
 end
